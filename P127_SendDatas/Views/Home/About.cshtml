@@ -1,0 +1,22 @@
+﻿@using P127_SendDatas.Models 
+@{ 
+    ViewBag.Title = "About";
+}
+<h4>About page</h4>
+
+@*<ul>
+        @foreach (Computer computer in ViewBag.Computers)
+        {
+            <li style="color:@(computer.Count == 0 ? "red" : "")">
+                Id: @computer.Id, Brand: @computer.Brand, Model: @computer.Model, Memory: @computer.Memory, Ram: @computer.Ram, Processor: @computer.Processor,
+                Release date: @computer.ReleaseDate.ToString("dd,MMMM,yyyy"), Count: @computer.Count
+            </li>
+        }
+    </ul>*@
+
+<span>
+    @TempData["Computer"]
+</span>
+<span>
+    @ViewData["Computer"]
+</span>
